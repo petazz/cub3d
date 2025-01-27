@@ -2,10 +2,10 @@
 CC 		= clang
 NAME 	= cub3D
 USER 	= misaguir
-CFLAGS 	= -Wall -Wextra -Werror -g #-fsanitize=address
+CFLAGS 	= -Wall -Wextra -Werror -g -fsanitize=address
 LIBFT 	= ./Include/LIBFT/libft.a
 MLX42 	= ./Include/MLX42_P2/build/libmlx42.a
-MLX_FLAGS = -Iinclude -ldl -lglfw -pthread -lm 
+MLX_FLAGS = -Iinclude -ldl -lglfw -g -pthread -lm 
 SRC_DIR = src/
 OBJ_DIR = obj/
 LIB = ./Include/$(NAME).h

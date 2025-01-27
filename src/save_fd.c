@@ -6,7 +6,7 @@
 /*   By: pgonzal2 <pgonzal2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 14:01:50 by misaguir          #+#    #+#             */
-/*   Updated: 2025/01/17 18:33:33 by pgonzal2         ###   ########.fr       */
+/*   Updated: 2025/01/27 16:00:39 by pgonzal2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ void	read_fd(char *file, t_cub *game)
 			ft_check_line(line, game);
 		if (game->count_data == 6)
 		{
-			if(ft_strlen(line) > game->max)
+			if (ft_strlen(line) > game->max)
 				game->max = ft_strlen(line);
 			game->count_map++;
 		}

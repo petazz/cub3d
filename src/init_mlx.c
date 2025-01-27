@@ -6,7 +6,7 @@
 /*   By: pgonzal2 <pgonzal2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 16:23:47 by misaguir          #+#    #+#             */
-/*   Updated: 2025/01/23 21:31:14 by pgonzal2         ###   ########.fr       */
+/*   Updated: 2025/01/27 16:09:09 by pgonzal2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ void	init_mlx(t_cub *game)
 	mlx_key_hook(game->mlx, &key_press, game);
 	mlx_loop_hook(game->mlx, &mouse_move, game);
 	mlx_loop_hook(game->mlx, &loop_animation, game);
-	minimap(game);
+	minimap(game, 0, 0);
 	mlx_loop_hook(game->mlx, &draw_player, game);
 	mlx_loop(game->mlx);
 }
